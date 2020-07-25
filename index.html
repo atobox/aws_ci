@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ecomm</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="row">
+			<div class="col">
+				<img class="style-logo" src="images/titli.png" alt="titli Logo">
+				<nav class="style-nav">
+					<ul>
+						<li><a href="#">Electronics</a></li>
+						<li><a href="#">Accesories</a></li>
+						<!--<li><a href="#">Apparel</a></li>
+						<li><a href="#">Books</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<div class="row">
+			<div class="col">
+				<div class="hero">
+					<!--<h3> </h3>
+					<h4> </h4>
+					<h1> </h1>
+					<a href="" class="button">Read More</a>-->
+					<img class="slider animate-fade" src="images/mi.jpg" style="width:100%; height:100%">
+  					<img class="slider animate-fade" src="images/mitv.jpg" style="width:100%; height:100%">
+  					<img class="slider animate-fade" src="images/iphn8.jpg" style="width:100%; height:100%">
+  					<img class="slider animate-fade" src="images/redmi5.jpg" style="width:100%; height:100%">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-md-one-half">
+				<div class="cap"><center><h2>Great deals</h2></center></div>
+				<div class="info-box-tan sp">
+					<div class="prdt">
+						<img src="images/apple.png" alt="apple" class="img_prdt">
+						<br/>
+						<p class="desc"><font size="4px"> Iphones </font><br/> <br/> <font color="green" size="3px"> Min 30% off </font></p>
+						
+					</div>
+					<div class="prdt" style="border-left: 1px solid #7C7F84">
+						<img src="images/head.jpg" alt="headphones" class="img_prdt">
+						<br/>
+						<p class="desc"><font size="4px"> Earphones </font><br/> <br/> <font color="green" size="3px"> Min 25% off </font></p>
+					</div>
+					
+					<!--<h2>Iphones</h2>
+					<p>Preorder Iphone X now.</p>
+					<a href="" class="button" id="a1">Add to cart</a>-->
+					
+				</div>
+				<center><div class="btn">View all</div></center><br/>
+			</div>
+			<div class="col col-md-one-half">
+			   	<div class="cap"><center><h2>Exclusive brands</h2></center></div>
+				<div class="info-box-dark sp">
+					<div class="prdt">
+						<img src="images/sam2.jpg" alt="Samsung S9" class="img_prdt">
+						<br/>
+						<p class="desc"><font size="4px"> Samsung Galaxy S9 </font><br/> <br/> <font color="green" size="3px"> 6GB RAM | 64GB ROM </font></p>
+						
+					</div>
+					<div class="prdt" style="border-left: 1px solid #7C7F84">
+						<img src="images/xiaomi.jpg" alt="Mi" class="img_prdt">
+						<br/>
+						<p class="desc"><font size="4px"> Mi 5 </font><br/> <br/> <font color="green" size="3px"> Flat Rs.2350 off </font></p>
+					</div>
+				</div>
+				<center><div class="btn">View all</div></center><br/>
+			</div>
+		</div>
+		<div class="cap1"><center><h2>Curated picks</h2></center></div>
+		<div class="row sp1"><br/>
+			<div class="col col-md-one-half col-lg-one-fourth"><center><img src="images/sam1.jpg" alt="" class="img_prdt"></center><br/>
+			<center><p class="desc"><font size="4px"> Samsung Galaxy J7 </font><br/> <br/> <font color="green" size="3px"> Flat Rs.3350 off </font></p></center></div>
+			
+			<div class="col col-md-one-half col-lg-one-fourth"><center><img src="images/flip.jpg" alt="" class="img_prdt"></center><br/>
+			<center><p class="desc"><font size="4px"> Flip covers </font><br/> <br/> <font color="green" size="3px"> Min 20% off </font></p></center></div>
+			
+			<div class="col col-md-one-half col-lg-one-fourth"><center><img src="images/r.jpg" alt="" class="img_prdt"></center><br/>
+			<center><p class="desc"><font size="4px"> Redmi Note 5 </font><br/> <br/> <font color="green" size="3px"> 4GB RAM| 64GB ROM </font></p></center></div>
+			
+			<div class="col col-md-one-half col-lg-one-fourth"><center><img src="images/op.jpg" alt="" class="img_prdt"></center><br/>
+			<center><p class="desc"><font size="4px"> Oppo F5 </font><br/> <br/> <font color="green" size="3px"> 20MP Front| 12MP Rear </font></p></center></div>
+		</div>
+	</main>
+	
+	<footer>
+		<div class="row">
+			<div class="col">
+				Copyright &copy; 2018 Titli <p class="ft">Powered by AtOBox</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
+<script language="javascript">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slider");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+	setTimeout(carousel, 9500);    
+}
+</script>

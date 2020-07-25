@@ -1,0 +1,22 @@
+{
+  "name": "aws_ci",
+  "version": "1.0.0",
+  "description": "aws deploy and CI test.",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'Starting server...' && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atobox/aws_ci.git"
+  },
+  "keywords": [
+    "aws"
+  ],
+  "author": "eagle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atobox/aws_ci/issues"
+  },
+  "homepage": "https://github.com/atobox/aws_ci#readme"
+}
