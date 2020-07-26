@@ -43,3 +43,19 @@ http.createServer(function (req, res) {
   }
 
 }).listen(8080);
+
+/*
+let add = (() => {
+  let count = 0;
+  return () => ++count;
+  
+})();
+
+add();
+
+add();
+
+add();
+
+console.log(add());
+*/
