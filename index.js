@@ -1,9 +1,9 @@
 var http = require('http');
 var fs = require('fs');
 http.createServer(function (req, res) {
-//  console.log(_dirname +  "req.url);
-  if(req.url.indexOf('.html') != -1)  {
-    fs.readFile(__dirname + req.url, function(err, data) {
+  
+  if(req.url.indexOf('.html') != -1 || req.url === '/')  {
+    fs.readFile(__dirname + "/index.html", function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
